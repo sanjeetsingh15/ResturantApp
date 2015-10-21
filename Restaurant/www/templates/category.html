@@ -1,0 +1,42 @@
+<ion-view view-title="Menu">
+    <ion-nav-buttons side="right"  >
+      <i style="color: white;font-size: 24px; padding: 5px 10px 5px 10px;" class="icon ion-ios-cart" ui-sref="app.cart"> 4{{cartTotal}}</i>
+    </ion-nav-buttons>
+    <ion-content ng-class="{expanded:isExpanded}" class="condensed-space no-padding animate-blinds">
+    <div id="beaconMsg"></div>
+        <div class="list">
+                <div class="card energized-bg">
+                    <a class="item clear-bg item-bg-image" ui-sref="app.lists">
+                        <h2>DRINKS</h2>
+                        <img src="img/drinks.jpg" >
+                    </a>
+                </div>
+                <div class="card energized-bg">
+                    <a class="item clear-bg item-bg-image" ui-sref="app.lists">
+                        <h2>LUNCH</h2>
+                        <img src="img/lunch.jpg">
+                    </a>
+                </div>
+                <div class="card energized-bg">
+                    <a class="item clear-bg item-bg-image" ui-sref="app.lists">
+                        <h2>BREAKFAST</h2>
+                        <img src="img/breakfast.jpg">
+                    </a>
+                </div>
+                <div class="card energized-bg">
+                    <a class="item clear-bg item-bg-image" ui-sref="app.lists">
+                        <h2>DINNER</h2>
+                        <p>More Than the Other Down Under</p>
+                        <img src="img/dinner.jpg">
+                    </a>
+                </div>
+                <div class="card energized-bg">
+                    <a class="item clear-bg item-bg-image" ui-sref="app.lists">
+                        <h2>PIZZA</h2>
+                        <img src="img/pizza.jpg">
+                    </a>
+                </div>
+            </div>
+            
+    </ion-content>
+</ion-view>

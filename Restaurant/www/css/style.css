@@ -1,0 +1,31 @@
+/* Empty. Add your own CSS if you like */
+.icon-square{
+    padding: 8px;
+    background-color: #90340B;
+    color: #fff;
+}
+
+.bar-positive {
+    z-index: 2;
+}
+
+.bar-subheader {
+    z-index: 1;
+    transition: top 0.25s ease;
+}
+
+.has-subheader {
+    top: 44px;
+    .scroll {
+        padding-top: 44px;
+    }
+}
+
+body.bar-subheader-slide-away {
+    .bar-subheader {
+        top: 0;
+    }
+    .has-subheader {
+        top: 44px;
+    }
+}
