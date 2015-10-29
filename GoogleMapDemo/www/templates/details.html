@@ -1,0 +1,104 @@
+<ion-view view-title="Details">
+
+    <ion-nav-buttons side="right"  >
+      <i style="color: white;font-size: 24px; padding: 5px 10px 5px 10px;" class="icon ion-ios-cart" ui-sref="app.cart"> 4{{cartTotal}}</i>
+    </ion-nav-buttons>
+    
+    <ion-pane>
+    
+    <ion-header-bar  class="bar-subheader bar-dark" ng-class="{'bar-subheader-slide-away': slideHeader}">
+        <div ng-show="something" class="title"><h1>Hide this sub header on scroll down and display on scroll up!</h1></div>
+        <div ng-hide="something" class="hero " style="background-image: url('img/drinks.jpg');" ng-class="{'bar-subheader-slide-away': slideHeader2}"></div>
+     </ion-header-bar>
+     
+    <ion-content  ng-class="{expanded:$scope.isExpanded}" scroll-watch >
+        
+        <div ng-hide="something" style="width:100%; height:180px;"></div>
+        <div ng-show="something" style="width:100%; height:100px;"></div>
+        
+        <h4 class="content padding double-padding-x slide-up">My Drink</h4>
+        
+        <div class="card  animate-fade-slide-in-right">
+          <div class="item item-text-wrap">
+            <h4>Description</h4>
+            <p>This is your product description</p>
+          </div>
+        </div>
+        <div class="card  animate-fade-slide-in-right">
+          <div class="item item-text-wrap">
+            <h4>Description</h4>
+            <p>This is your product description</p>
+          </div>
+        </div>
+        <div class="card  animate-fade-slide-in-right">
+          <div class="item item-text-wrap">
+            <h4>Description</h4>
+            <p>This is your product description</p>
+          </div>
+        </div>
+        <div class="card  animate-fade-slide-in-right">
+          <div class="item item-text-wrap">
+            <h4>Description</h4>
+            <p>This is your product description</p>
+          </div>
+        </div>
+        <div class="card  animate-fade-slide-in-right">
+          <div class="item item-text-wrap">
+            <h4>Description</h4>
+            <p>This is your product description</p>
+          </div>
+        </div>
+        <div class="card  animate-fade-slide-in-right">
+          <div class="item item-text-wrap">
+            <h4>Description</h4>
+            <p>This is your product description</p>
+          </div>
+        </div>
+        <div class="card  animate-fade-slide-in-right">
+          <div class="item item-text-wrap">
+            <h4>Description</h4>
+            <p>This is your product description</p>
+          </div>
+        </div>
+        <div class="card  animate-fade-slide-in-right">
+          <div class="item item-text-wrap">
+            <h4>Description</h4>
+            <p>This is your product description</p>
+          </div>
+        </div>
+        <div class="card  animate-fade-slide-in-right">
+          <div class="item item-text-wrap">
+            <h4>Description</h4>
+            <p>This is your product description</p>
+          </div>
+        </div>
+        
+        
+        
+        <div class="card  animate-fade-slide-in-right">
+          <div class="item item-text-wrap">
+            <h4>Special Instruction</h4>
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Instructions</span>
+                <textarea placeholder="Your Instructions"></textarea>
+              </label>
+          </div>
+        </div>
+        
+        <div class="card  animate-fade-slide-in-right">
+          <div class="item item-text-wrap">
+            <strong> $12.50 </strong> 
+            <div class="pull-right" style="width: 100px;">
+                <i class="icon ion-plus icon-square" ng-click="myquantity('1')"></i><span> {{quantity}} </span><i class="icon ion-minus icon-square" ng-click="myquantity('0')"></i>
+            </div>
+          </div>
+        </div>
+        
+        
+    </ion-content>
+    </ion-pane>
+    <ion-footer-bar>
+    <button class="button-full button-assertive" ui-sref="app.cart" style="color: #fff;">Add To Cart</button>
+    </ion-footer-bar>
+    
+</ion-view>

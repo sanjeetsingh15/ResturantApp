@@ -1,0 +1,45 @@
+<ion-view view-title="Cart">
+    <ion-nav-buttons side="right"  >
+      <i style="color: white;font-size: 24px; padding: 5px 10px 5px 10px;" class="icon ion-ios-cart" ui-sref="app.cart"> 4{{cartTotal}}</i>
+    </ion-nav-buttons>
+    <ion-content ng-class="{expanded:$scope.isExpanded}" class="animate-fade-slide-in">
+        <h4 class="content padding double-padding-x">My Cart</h4>
+        
+        <div class="card">
+          <div class="item item-text-wrap">
+            <h4>Fry Rice <i style="float: right;" class="icon ion-trash-a" ng-click="myquantity('1')"></i></h4>
+            <p>1 Plain Full Fry Rice And Other Spices.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="item item-text-wrap">
+            <h4>Fry Rice <i style="float: right;" class="icon ion-trash-a" ng-click="myquantity('1')"></i></h4>
+            <p>1 Plain Full Fry Rice And Other Spices.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="item item-text-wrap">
+            <h4>Fry Rice <i style="float: right;" class="icon ion-trash-a" ng-click="myquantity('1')"></i></h4>
+            <p>1 Plain Full Fry Rice And Other Spices.</p>
+          </div>
+        </div>
+        </div>
+        
+        <div class="card">
+          <div class="item item-text-wrap">
+            <div class="pull-right" >
+                <span style="padding-right:10px">Sub Total $50</span> <br />
+                <span style="padding-right:10px">Delivery Charges $10</span> <br />
+                <span style="padding-right:10px">Service Charges  $5</span><br />
+                <hr />
+                <span style="padding-right:10px">Total Charges  $65</span><br />
+            </div>
+          </div>
+        </div>
+        <button class="button button-full button-assertive" ui-sref="app.category" style="color: #fff;">continue Shoping</button>
+        
+    </ion-content>
+    <ion-footer-bar>
+    <button class="button-full button-assertive" ui-sref="app.category" style="color: #fff;">Confirm</button>
+    </ion-footer-bar>
+</ion-view>
