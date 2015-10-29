@@ -7,7 +7,7 @@
 // 'starter.controllers' is found in controllers.js
 angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
-.run(function($ionicPlatform, GeoFencing) { console.log(GeoFencing); 
+.run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
@@ -51,10 +51,23 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   
   .state('app.map', {
     url: '/map',
-    templateUrl: 'templates/map.html',
-    controller: 'MapCtrl'
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/map.html',
+        controller: 'MapCtrl'
+      }
+    }
   })
-
+  
+  .state('app.mylocation', {
+    url: '/mylocation',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/mylocation.html',
+        controller: 'MyLocationCtrl'
+      }
+    }
+  })
 
   .state('app.map2', {
     url: '/map2',
@@ -62,6 +75,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       'menuContent': {
         templateUrl: 'templates/map2.html',
         controller: 'Map2Ctrl'
+      }
+    }
+  })
+  
+  .state('app.enterofferone', {
+    url: '/enterofferone',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/enter_offer1.html',
+        controller: 'EnterOfferOneCtrl'
       }
     }
   })

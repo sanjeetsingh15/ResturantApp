@@ -1,4 +1,4 @@
-<ion-view view-title="">
+<ion-view view-title="Resturant Route Map">
     
     <ion-header-bar class="bar-dark" >
       <h1 class="title">Google Maps Example</h1>
@@ -14,10 +14,10 @@
         <i class="icon ion-android-walk" ng-click="travelMode('WALKING')"></i>
         WALKING
       </a>
-      <a class="tab-item">
+    <!--  <a class="tab-item">
         <i class="icon ion-android-bicycle" ng-click="travelMode('BICYCLING')"></i>
         BICYCLING
-      </a>
+      </a> -->
     <!--  <a class="tab-item">
         <i class="icon ion-android-subway" ng-click="travelMode('TERRAIN')"></i>
         TERRAIN
@@ -25,6 +25,8 @@
     </div>
     <!-- <input id="pac-input" class="controls" type="text" placeholder="Search Box"> -->
     <div id="map" data-tap-disabled="true"></div>
+    <div id="side_bar" style="display:none"></div>
+
     <div class="list list-inset " ng-hide="!searchNewsText" style="margin-top: 0px;transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);">
     <div id="floating-panel">
       Origin: <input type="text" readonly id="origin">
