@@ -423,30 +423,20 @@ angular.module('starter.controllers', [])
         var dlat = devt.lat();
         var dlng = devt.lng();
         
-          //  $timeout(abc, 3000);
+            $timeout(abc, 3000);
       
-      $scope.GoNavigation = function() {
-        abc();
-      }; 
+        
         
         function abc(){
-            if(slat && slng && dlat && dlng){
-                launchnavigator.navigate(
-              
-              [dlat, dlng],
+            launchnavigator.navigate(
               [slat, slng],
+              [dlat, dlng],
               function(success){ console.log(success);
                  // alert("Plugin success");
               },
               function(error){
-                //alert("Please choose destination point on map");
                  // alert("Plugin error: "+ error);
               });  //alert("Hello");
-            }// else {
-               // alert("Please choose destination point on map");
-             //   return;
-           // }//
-            
         }
         
         
