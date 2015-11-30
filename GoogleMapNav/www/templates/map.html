@@ -1,0 +1,32 @@
+<ion-view ng-controller="MapCtrl">   
+    <ion-nav-buttons side="right"  >
+      <div id="directiontt" style="color: #fff; font-size: 16px; padding: 3px; padding-right: 8px;"></div>
+    </ion-nav-buttons> 
+    <ion-content>
+    <div id="directionthen"></div>
+<div class="myloc" style="position: absolute;margin: -435px 0 0 310px;padding: 5px 5px 0px 5px;border: 1px solid #ddd;background: rgba(255, 255, 255, 0.61);color: #fff;" ng-click="centerOnMe()"><img src="img/mylocation.png"/></div>
+    <div id="map" data-tap-disabled="true" style="width: 100%; height: 95%;"></div>
+    
+    <div id="right-panel" style="width:100%;height:auto;"></div>
+    
+    <div id="footerTabsTwo" class="tabs tabs-icon-left" style="background:#000; color:#fff; width:100%; text-align:center; margin:0px; font-size:22px; font-weight:600;">
+        <img style="float: left; background: #fff; border: 1px  solid #000; border-radius: 21px; margin: 8px;" src="img/close.png" ng-click="closeRoute()" />
+        <div id="footerTabsThree" style="width: 100%;"></div>
+    </div>
+    
+    <div id="footerTabsOne" class="tabs tabs-icon-left">
+      <a class="tab-item" ng-click="travelMode('DRIVING')">
+        <i class="icon ion-android-car"></i>
+        DRIVING
+      </a>
+      <a class="tab-item" ng-click="travelMode('WALKING')">
+        <i class="icon ion-android-walk"></i>
+        WALKING
+      </a>
+      <a class="tab-item" ng-click="GoNavigation()">
+        <i class="icon ion-navigate" ></i>
+        Navigation
+      </a>         
+    </div>
+    </ion-content>
+</ion-view> 

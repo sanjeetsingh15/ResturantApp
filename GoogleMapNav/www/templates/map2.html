@@ -1,0 +1,33 @@
+<ion-view ng-controller="MapCtrl" view-title="{{directionTitle}}">
+    
+    <ion-header-bar class="bar-dark" >
+      <h1 class="title">Google Maps Example</h1>
+    </ion-header-bar>
+    
+    <ion-content>
+    <div class="tabs-striped tabs-top tabs-background-light tabs-color-dark">
+    <div class="tabs tabs-icon-top" style="top: 0px;" id="sbc">
+      <a class="tab-item" id="all" href="#" ng-click="pointOfInterest('resturant, hospital, atm')">
+        <i class="icon ion-grid"></i>
+        ALL PLACES
+      </a>
+      <a class="tab-item" id="resturant"  href="#" ng-click="pointOfInterest('resturant')">
+        <i class="icon ion-ios-wineglass"></i>
+        RESTURANTS
+      </a>
+      <a class="tab-item" id="hospital"  href="#" ng-click="pointOfInterest('hospital')">
+        <i class="icon ion-ios-medkit "></i>
+        HOSPITAL
+      </a>
+      <a class="tab-item" id="atm"  href="#" ng-click="pointOfInterest('atm')">
+        <i class="icon ion-ios-calculator"></i>
+        ATM
+      </a>
+    </div>
+  </div>
+    
+    <div id="mapp" data-tap-disabled="true" style="width: 100%; height: 100%;"></div>
+    
+    <div id="side_bar" style="display:none"></div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,199 @@
+/* Empty. Add your own CSS if you like */
+
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+#mapp {
+  width: 100%;
+  height: 100%;
+}
+
+#floating-panel {
+  position: absolute;
+  top: 10px;
+  left: 25%;
+  z-index: 5;
+  background-color: #fff;
+  padding: 5px;
+  border: 1px solid #999;
+  text-align: center;
+  font-family: 'Roboto','sans-serif';
+  line-height: 30px;
+  padding-left: 10px;
+  display: block !important;
+}
+
+
+#right-panel {
+  font-family: 'Roboto','sans-serif';
+  line-height: 30px;
+  padding: 10px;
+  margin-top:10px;
+}
+
+#right-panel select, #right-panel input {
+  font-size: 15px;
+}
+
+#right-panel select {
+  width: 100%;
+}
+
+#right-panel i {
+  font-size: 12px;
+}
+
+      #right-panel {
+        height: 250px;
+        float: right;
+        width: 100%;
+        overflow: auto;
+      }
+
+      #map {
+        margin-right: 400px;
+      }
+
+      #floating-panel {
+        background: #fff;
+        padding: 5px;
+        font-size: 14px;
+        font-family: Arial;
+        border: 1px solid #ccc;
+        box-shadow: 0 2px 2px rgba(33, 33, 33, 0.4);
+        display: none;
+      }
+
+      @media print {
+        #map {
+          height: 500px;
+          margin: 0;
+        }
+
+        #right-panel {
+          float: none;
+          width: auto;
+        }
+      }
+
+.scroll {
+  height: 100%;
+}
+
+.controls {
+  margin-top: 10px;
+  border: 1px solid transparent;
+  border-radius: 2px 0 0 2px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  height: 32px;
+  outline: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+#pac-input {
+  background-color: #fff;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 12px;
+  padding: 0 11px 0 13px;
+  text-overflow: ellipsis;
+  width: 300px;
+}
+
+#pac-input:focus {
+  border-color: #4d90fe;
+}
+
+.pac-container {
+  font-family: Roboto;
+}
+
+#type-selector {
+  color: #fff;
+  background-color: #4d90fe;
+  padding: 5px 11px 0px 11px;
+}
+
+#type-selector label {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.tab-item .action{
+    background: #F44336 !important;
+    color: #fff !important;
+    border-color: #fff !important;
+}
+
+.tabs-striped.tabs-color-dark .tab-item.tab-item-active, .tabs-striped.tabs-color-dark .tab-item.active, .tabs-striped.tabs-color-dark .tab-item.activated {
+    margin-top: 3px !important;
+    color: #F44336 !important;
+    border-bottom: 3px solid #F44336 !important;
+    }
+    
+.item-avatar .item-content .item-image, .item-avatar .item-content>img:first-child, .item-avatar .item-image, .item-avatar-left .item-content .item-image, .item-avatar-left .item-content>img:first-child, .item-avatar-left .item-image, .item-avatar-left>img:first-child, .item-avatar>img:first-child{
+    border-radius: 7% !important;
+    left: 16px !important;
+    max-height: 100px !important;
+    max-width: 100px !important;
+    }
+    
+    
+.kumar-maneuver {
+    background: url(../img/maneuvers.png) no-repeat right 6px #EF473A !important;
+    position: absolute;
+    right: 0;
+    height: 16px;
+    font-size: 13px;
+    margin: 0;
+    line-height: 6px;
+    float: left;
+}
+
+
+.kumar-maneuver.kumar-turn-right {
+    background-position: 0 -483px;
+    background-repeat:no-repeat;
+    float:right;
+}
+
+.kumar-maneuver.kumar-turn-left {
+    background-position: 0 -413px;
+    background-repeat:no-repeat;
+    float:right;
+}
+
+.kumar-maneuver.kumar-turn-slight-left {
+    background-position: 0 -378px;
+    background-repeat:no-repeat;
+    float:right;
+}
+
+.kumar-maneuver.kumar-turn-sharp-left {
+    background-position: 0 0;
+    background-repeat:no-repeat;
+    float:right;
+}
+
+.kumar-maneuver.kumar-roundabout-left {
+    background-position: 0 -197px;
+    background-repeat:no-repeat;
+    float:right;
+}
+
+.kumar-maneuver.kumar-straight {
+    background-position: 0 -534px;
+    background-repeat:no-repeat;
+    float:right;
+}
+
+.kumar-maneuver.kumar-turn-slight-left {
+    background-position: 0 -378px;
+    background-repeat:no-repeat;
+    float:right;
+}

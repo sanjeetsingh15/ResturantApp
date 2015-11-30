@@ -1,0 +1,45 @@
+<ion-view view-title="Setting">
+  <ion-content class="forgot">
+<div style="width: 100%; height: 20px;"></div>
+
+    <div class="list">
+         <div class="item item-divider" style="background:#000;">
+            <h2 style="font-size:22px; color:#fff;">Point Of Interest Preference</h2>
+         </div>
+         <ul class="list">
+         <li class="item item-checkbox" ng-repeat="item in pointOIP">
+             <label class="checkbox">
+               <input type="radio"  ng-model="poi.group" ng-value="item.value"  id="item.value" />
+             </label>
+             {{ item.text }}
+          </li>
+        </ul>
+        
+          <div style="width: 100%; height: 20px;"></div>
+           <div class="item item-divider" style="background:#000;">
+            <h2 style="font-size:22px; color:#fff;">Navigation Preference</h2>
+         </div>
+         
+         <ul class="list">
+
+          <li class="item item-checkbox">
+             <label class="checkbox">
+               <input type="radio"  ng-model="np.nav" value="inapp" />
+             </label>
+             In App Navigator
+          </li>
+          <li class="item item-checkbox">
+             <label class="checkbox">
+               <input type="radio"  ng-model="np.nav" value="gmap" />
+             </label>
+            Google Map Navigator
+          </li>
+
+        </ul>
+    </div>
+    <div id="msg" style="text-align: center;  padding: 0 5px 0px 5px; background: #458A29; margin-bottom: 16px; color: #fff;"></div>
+    <button class="button button-block button-assertive" ng-click="pointOfInterest()"> Save & Continue </button>
+    
+    <div style="width: 100%; height:50px;"></div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,61 @@
+<ion-view ng-controller="MapCtrl" view-title="{{directionTitle}}">
+    
+    <ion-header-bar class="bar-dark" >
+      <h1 class="title">Google Maps Example</h1>
+    </ion-header-bar>
+    
+    <ion-content>
+    <div class="tabs tabs-icon-left">
+      <a class="tab-item" ng-click="travelMode('DRIVING')">
+        <i class="icon ion-android-car"></i>
+        DRIVING
+      </a>
+      <a class="tab-item" ng-click="travelMode('WALKING')">
+        <i class="icon ion-android-walk"></i>
+        WALKING
+      </a>
+      <a class="tab-item" ng-click="GoNavigation()">
+        <i class="icon ion-navigate" ></i>
+        Navigation
+      </a>      
+    <!--  <a class="tab-item">
+        <i class="icon ion-android-bicycle" ng-click="travelMode('BICYCLING')"></i>
+        BICYCLING
+      </a> -->
+    <!--  <a class="tab-item">
+        <i class="icon ion-android-subway" ng-click="travelMode('TERRAIN')"></i>
+        TERRAIN
+      </a>  -->    
+    </div>
+    <!-- <input id="pac-input" class="controls" type="text" placeholder="Search Box"> -->
+     <div   id="directionText" class="myloc" style="position: absolute; margin: 105px 0 0 0; padding: 5px 5px 0px 5px; float: right; border: 1px solid #ddd; z-index: 9999; background: rgba(255, 255, 255, 0.61);color: #000;" ng-click="centerOnMe()"></div>
+    
+    <div id="distanceeee" class="myloc" style="position: absolute; margin: 50px 0 0 0; padding: 5px 5px 0px 5px; float: right; border: 1px solid #ddd; z-index: 9999;  color:#000; background: rgba(255, 255, 255, 0.61); " > </div>
+    
+    <div  id="distanceText" class="myloc" style="position: absolute; margin: 80px 0 0 0; padding: 5px 5px 0px 5px; float: right; border: 1px solid #ddd; z-index: 9999;  color:#000; background: rgba(255, 255, 255, 0.61); " ></div>
+    
+     <div  id="directionTitle" class="myloc" style="position: absolute; margin: 130px 0 0 0; padding: 5px 5px 0px 5px; float: right; border: 1px solid #ddd; z-index: 9999;  color:#000; background: rgba(255, 255, 255, 0.61); " ></div>
+    
+
+    
+    <div id="map" data-tap-disabled="true"></div>
+    
+    <div id="side_bar" style="display:none"></div>
+
+    <div class="list list-inset " ng-hide="!searchNewsText" style="margin-top: 0px;transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);">
+    <div id="floating-panel">
+      Origin: <input type="text" readonly id="origin">
+      Destination: <input type="text" readonly id="destination"><br>
+      Heading: <input type="text" readonly id="heading"> degrees
+    </div>    
+    <div id="right-panel" style="width:100%;height:auto;"></div>
+    </div>
+    </ion-content>
+    <!--
+    <ion-footer-bar class="bar-dark">
+    
+        <a ng-click="GoNavigation()" ng-show="!searchNewsTextbtn" class="button button-icon icon ion-help-buoy"> Show Direction </a>&nbsp;&nbsp;&nbsp;&nbsp;
+      <a ng-click="centerOnMe()" class="button button-icon icon ion-navigate"> Find Me </a>
+    </ion-footer-bar>
+    -->
+</ion-view>

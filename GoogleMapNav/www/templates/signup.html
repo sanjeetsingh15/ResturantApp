@@ -1,0 +1,40 @@
+<ion-view view-title="Form">
+    
+  <ion-content>
+    <div class="bar bar-header bar-dark">
+      <h1 class="title">Sign Up Form</h1>
+    </div>
+    <div class="list" style="top: 35px;">
+      <label class="item item-input item-floating-label">
+        <span class="input-label">Name</span>
+        <input type="text" placeholder="Name" />
+      </label>
+      <label class="item item-input item-floating-label">
+        <span class="input-label">Email</span>
+        <input type="text" placeholder="Email" />
+      </label>
+      <label class="item item-input item-floating-label">
+        <span class="input-label">Password</span>
+        <input type="text" placeholder="Password" />
+      </label>
+      <label class="item item-input item-floating-label">
+        <span class="input-label">Confirm Password</span>
+        <input type="text" placeholder="Confirm Password" />
+      </label>
+      <label class="item item-input item-floating-label">
+        <select class="item" name="point_of_interest" placeholder="Point of Interest" >
+            <option value="food_and_drink">Food And Drink</option>
+            <option value="parking">Parking</option>
+            <option value="gas_station">Gas Station</option>
+            <option value="accommodation">Accommodation</option>
+            <option value="medical_services">Medical Services</option>
+            <option value="education">Education</option>
+            <option value="transport">Transport</option>
+            <option value="shopping">Shopping</option>
+        </select>
+      </label>
+    </div><br />
+        <button class="button button-full button-calm" ng-click="submit()" style="color: #fff;">Submit</button>
+    
+  </ion-content>
+</ion-view>
